@@ -1,0 +1,56 @@
+body {
+  background-color: #f4ebd0;
+  font-family: "Bellota Text", sans-serif;
+}
+
+.app-container {
+  background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg);
+  width: 600px;
+  background-color: #122620;
+  color: white;
+  display: block;
+  margin: 100px auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-top: 0;
+}
+
+select {
+  width: 100%;
+  padding: 5px 3px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #f4ebd0;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  border-bottom: solid 0.5px rgb(211, 211, 211);
+  padding-bottom: 40px;
+  line-height: 10px;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.date {
+  color: #d6ad60;
+}
+
+.am {
+  font-size: 18px;
+  vertical-align: middle;
+}
+footer {
+  text-align: center;
+}

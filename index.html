@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <div class="app-container">
@@ -17,13 +22,17 @@
         <option value="Los Angeles">London</option>
       </select>
       <div class="city">
-        <h2>Los Angeles</h2>
-        <div class="time">January 26th 2024</div>
-        <div class="time">9:00:15 AM</div>
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">January 26th 2024</div>
+        </div>
+        <div class="time">9:00:15 <span class="am">AM</span></div>
       </div>
       <div class="city">
-        <h2>New York</h2>
-        <div class="time">January 26th 2024</div>
+        <div>
+          <h2>New York</h2>
+          <div class="date">January 26th 2024</div>
+        </div>
         <div class="time">9:00:15 AM</div>
       </div>
     </div>
