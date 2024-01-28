@@ -1,5 +1,8 @@
 function showTime(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let currentCityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -36,7 +39,7 @@ function refreshTime() {
 
   NewYorkDateElement.innerHTML = nyCurrentDay;
   NewYorkTimeElement.innerHTML = nyCurrentTime.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "h:mm:ss [<small>] A [</small>]"
   );
 }
 
