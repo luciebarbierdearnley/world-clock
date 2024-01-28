@@ -1,9 +1,19 @@
-//function showTime(event) {
-
-//}
-
-//let chooseCity = document.querySelector("#cities");
-//chooseCity.addEventListener("change", showTime);
+function showTime(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let currentCityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+  <div class="city">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date">${currentCityTime.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="time">${currentCityTime.format(
+            "h:mm:ss"
+          )}<small>${currentCityTime.format("A")}</small></div>
+        </div>`;
+}
 
 function refreshTime() {
   let losAngelesElement = document.querySelector("#los-angeles");
@@ -32,3 +42,6 @@ function refreshTime() {
 
 refreshTime();
 setInterval(refreshTime, 1000);
+
+let chooseCity = document.querySelector("#select-city");
+chooseCity.addEventListener("change", showTime);
