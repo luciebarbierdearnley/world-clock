@@ -6,7 +6,6 @@ body {
 .app-container {
   background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg);
   width: 600px;
-  height: 800px;
   background-color: #122620;
   color: white;
   display: block;
@@ -26,7 +25,7 @@ h2 {
 select {
   width: 100%;
   padding: 5px 3px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 12px;
   border-radius: 5px;
   background-color: #fffafa;
@@ -35,7 +34,7 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin: 40px 0px;
   border-bottom: solid 0.5px rgb(211, 211, 211, 0.5);
   padding-bottom: 40px;
   line-height: 10px;
@@ -53,6 +52,13 @@ select {
   font-size: 18px;
   vertical-align: middle;
 }
+.homepage {
+  color: #fffafa;
+}
 footer {
   text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  margin-top: -80px;
 }

@@ -13,9 +13,10 @@ function showTime(event) {
             <div class="date">${currentCityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${currentCityTime.format(
-            "h:mm:ss"
+            "h:mm  "
           )}<small>${currentCityTime.format("A")}</small></div>
-        </div>`;
+        </div>
+        <a class="homepage" href="/"> Homepage</a>`;
 }
 
 function refreshTime() {
